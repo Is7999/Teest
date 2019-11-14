@@ -99,7 +99,28 @@ m.sendMessage(args)
    message.author.sendEmbed(embed)
    
    }
-   });
+   }); 
+   
+   
+   client.on("message", message => {
+    if (message.content === "رابط") {
+     const embed = new Discord.RichEmbed() 
+         .setColor("#00FF00")
+         .setThumbnail(message.author.avatarURL)
+         .setDescription(`**رابط سيرفر ساينس
+
+ https://discord.gg/mpaNau
+
+       ** `)
+   message.author.sendEmbed(embed)
+   
+   }
+   }); 
+   
+   client.on('message', msg => {
+    if(msg.content === 'رابط')
+    msg.reply('تم ارسال الرابط في الخاص:white_check_mark:  ')
+  });
 
 const developers = ["623186284030197762","id"]
 client.on('message', message => {
