@@ -73,7 +73,14 @@ m.sendMessage(args)
   client.on('message', msg => {
     if(msg.content === 'اسحاق')
     msg.reply('ها قلبي')
+  }); 
+  
+  client.on('message', msg => {
+    if(msg.content === 'إسحاق')
+    msg.reply('ها قلبي')
   });
+  
+  
   
   client.on("message", message => {
     if (message.content === "$help") {
