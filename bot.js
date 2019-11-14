@@ -82,7 +82,7 @@ m.sendMessage(args)
   
   client.on('message', msg => {
     if(msg.content === 'شعار')
-    msg.reply(' ومبروك رتبه العائلة CN هلا بك ياقلبي في سيرفرنا المتألق تحب تصير من عائلة ساينس حط الشعار  ')
+    msg.reply('CN')
   });
   
   client.on("message", message => {
