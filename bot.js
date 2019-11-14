@@ -80,7 +80,10 @@ m.sendMessage(args)
     msg.reply('ها قلبي')
   });
   
-  
+  client.on('message', msg => {
+    if(msg.content === 'شعار')
+    msg.reply(' ومبروك رتبه العائلة CN هلا بك ياقلبي في سيرفرنا المتألق تحب تصير من عائلة ساينس حط الشعار  ')
+  });
   
   client.on("message", message => {
     if (message.content === "$help") {
